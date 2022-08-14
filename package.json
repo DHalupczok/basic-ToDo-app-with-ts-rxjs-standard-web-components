@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/DHalupczok/basic-ToDo-app-with-ts-rxjs-standard-web-components#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "webpack": "^5.74.0"
   }
 }
