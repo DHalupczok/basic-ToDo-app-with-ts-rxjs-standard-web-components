@@ -1,0 +1,31 @@
+{
+  "name": "basic-todo-app-with-ts-rxjs-standard-web-components",
+  "version": "1.0.0",
+  "description": "ToDo app with pretty basic functionalities but with use of standard web components and rxjs for reactivity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DHalupczok/basic-ToDo-app-with-ts-rxjs-standard-web-components.git"
+  },
+  "keywords": [
+    "ToDo",
+    "Standard",
+    "web",
+    "components",
+    "rxjs",
+    "typescript",
+    "bootstrap"
+  ],
+  "author": "Denis Halupczok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DHalupczok/basic-ToDo-app-with-ts-rxjs-standard-web-components/issues"
+  },
+  "homepage": "https://github.com/DHalupczok/basic-ToDo-app-with-ts-rxjs-standard-web-components#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
