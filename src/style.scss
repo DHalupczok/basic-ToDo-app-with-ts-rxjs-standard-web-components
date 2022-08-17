@@ -1,3 +1,14 @@
-.hello {
-    color: deeppink;
+body {
+    background-color: silver;
+    .hello {
+        color: deeppink;
+        &:hover {
+            color: deepskyblue;
+        }
+    }
+
 }
+
+
+
+
