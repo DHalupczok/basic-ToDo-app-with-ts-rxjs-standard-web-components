@@ -4,10 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        index:  {import: './src/index.js', dependOn: 'shared'},
-        another: {import: './src/another-module.js', dependOn: 'shared'},
+        index:  {import: './src/index.ts', dependOn: 'shared'},
         shared: 'lodash',
-        print: './src/print.js'
+        print: './src/print.ts'
     },
 
     devtool: 'inline-source-map',
@@ -34,9 +33,13 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
             },
         ],
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
     },
 };
