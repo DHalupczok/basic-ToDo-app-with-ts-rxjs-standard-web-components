@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import * as _ from 'lodash';
 import './style.scss';
 import printMe from "./print";
 
@@ -14,5 +14,17 @@ function component() {
     element.appendChild(btn);
     return element;
 }
+
+interface IExample {
+    age: number,
+    name: string,
+    surname: string
+}
+
+function introduceYourself(person: IExample) {
+    return `Hello, My name is ${person.name} ${person.surname} and I am ${person.age} years old`;
+}
+
+console.log(introduceYourself({age: 20, name: 'John', surname: 'Smith'}))
 
 document.body.appendChild(component());
