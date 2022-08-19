@@ -2,9 +2,12 @@
   "name": "basic-todo-app-with-ts-rxjs-standard-web-components",
   "version": "1.0.0",
   "description": "ToDo app with pretty basic functionalities but with use of standard web components and rxjs for reactivity.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "serve": "webpack serve --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -27,7 +30,17 @@
   "homepage": "https://github.com/DHalupczok/basic-ToDo-app-with-ts-rxjs-standard-web-components#readme",
   "dependencies": {
     "bootstrap": "^5.2.0",
+    "lodash": "^4.17.21",
     "rxjs": "^7.5.6",
     "webpack": "^5.74.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
   }
 }
