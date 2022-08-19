@@ -1,6 +1,7 @@
 import * as _ from 'lodash';
 import './style.scss';
 import printMe from "./print";
+import {PopUpInfo} from "./components/PopUpInfo.component";
 
 function component() {
     const element = document.createElement('div');
@@ -28,3 +29,6 @@ function introduceYourself(person: IExample) {
 console.log(introduceYourself({age: 20, name: 'John', surname: 'Smith'}))
 
 document.body.appendChild(component());
+// Define the new element
+customElements.define('popup-info', PopUpInfo);
+document.body.appendChild(document.createElement('popup-info'))
